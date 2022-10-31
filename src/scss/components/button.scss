@@ -1,0 +1,12 @@
+.btn {
+  padding: 1rem 2rem;
+  &--primary {
+    background: $btn-primary-bg;
+    color: $white;
+    border-radius: $border-rad-default;
+  }
+
+  &--secondary {
+    color: $btn-secondary-text;
+  }
+}

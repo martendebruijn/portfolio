@@ -1,0 +1,80 @@
+nav {
+  max-width: 375px;
+}
+
+.nav-btn {
+  background-color: hsla(148, 17%, 27%, 0.402);
+  color: $white;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: $border-rad-default;
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  position: fixed;
+  // 375px - (width btn + margin left body + margin right body)
+  margin-left: calc(375px - 6.5rem);
+  z-index: 1;
+  transition: background-color 300ms ease-in-out;
+
+  &:hover {
+    background-color: green;
+  }
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px blue;
+  }
+}
+
+h1 {
+  padding-top: 1rem;
+  color: $primary-color;
+  font: {
+    family: $font-title;
+    size: 3rem;
+    weight: $font-bold;
+  }
+  line-height: 3rem;
+  // Zet font gelijk met ondertitel
+  margin-left: -3px;
+}
+
+header {
+  // nav btn height + 1rem padding
+  padding-top: calc(40px + 1rem);
+}
+
+.header__subtitle {
+  font: {
+    weight: $font-semibold;
+    size: 1rem;
+  }
+  color: $primary-transparent;
+}
+
+.profiel-img {
+  border-radius: 2rem 2rem 0 0;
+  margin: {
+    right: -2rem;
+    left: -2rem;
+  }
+  width: calc(100% + 4rem);
+  max-width: unset;
+}
+
+.intro {
+  font: {
+    size: 1.3rem;
+  }
+  line-height: 2rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.foo {
+  margin-bottom: 1.5rem;
+}

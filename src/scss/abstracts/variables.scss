@@ -1,0 +1,53 @@
+$black: hsl(0, 0%, 0%);
+$white: hsl(0, 0%, 100%);
+$primary-color: hsl(148, 17%, 27%);
+$primary-transparent: hsla(148, 17%, 27%, 0.6);
+
+$mozard-color: hsl(148, 17%, 27%);
+$eonics-color: hsl(280, 17%, 27%);
+$afstuderen-color: hsl(240, 17%, 27%);
+$minor-color: hsl(70, 17%, 27%);
+
+$placeholder-color: gray;
+$footer-bg: rgb(17, 48, 69);
+$footer-secondary: hsl(204, 66%, 47%);
+
+$bg-color: hsl(0, 0%, 93%);
+$text-color: $black;
+
+$btn-primary-bg: hsl(148, 17%, 27%);
+$btn-secondary-text: hsl(148, 17%, 27%);
+
+$header-text: $black;
+
+$border-rad-default: 6px;
+
+// Font Weight
+$font-thin: 100;
+$font-extralight: 200;
+$font-light: 300;
+$font-normal: 400;
+$font-medium: 500;
+$font-semibold: 600;
+$font-bold: 700;
+$font-extrabold: 800;
+$font-black: 900;
+
+$font-size-default: 16px;
+
+$font-title: "Pompiere", cursive;
+
+$height-screen: 100vh;
+$height-full: 100%;
+
+$width-screen: 100vw;
+$width-full: 100%;
+
+// Breakpoints
+$sm: 640px;
+$md: 768px;
+$lg: 1024px;
+$xl: 1280px;
+$xxl: 1536px;
+
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";

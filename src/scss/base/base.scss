@@ -1,0 +1,84 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font: {
+    size: $font-size-default;
+    family: sans-serif;
+  }
+  color: $text-color;
+  color: rgb(17 24 39);
+  line-height: 1.5rem;
+}
+
+body {
+  margin: auto;
+  max-width: 375px;
+  padding: {
+    top: 1rem;
+    right: 2rem;
+    bottom: 0;
+    left: 2rem;
+  }
+  background-color: $bg-color;
+}
+
+button,
+[type="submit"],
+[type="reset"] {
+  cursor: pointer;
+}
+
+button {
+  appearance: none;
+  border: unset;
+  background-color: unset;
+  color: inherit;
+}
+
+img,
+svg {
+  max-width: $width-full;
+  max-height: $height-full;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $header-text;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1 {
+  margin: 0;
+}
+
+.app {
+  min-height: $height-screen;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input {
+  border: unset;
+  background-color: unset;
+  color: unset;
+  padding: 0;
+}
+
+textarea {
+  resize: none;
+}

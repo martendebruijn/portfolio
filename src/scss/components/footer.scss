@@ -1,0 +1,101 @@
+footer {
+  a {
+    text-decoration: none;
+    color: $white;
+    display: block;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    line-height: 1;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+
+    &:hover {
+      color: $footer-secondary;
+    }
+    &:focus {
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px $footer-secondary;
+    }
+
+    span {
+      margin-right: 1rem;
+    }
+  }
+
+  background-color: $footer-bg;
+  margin: {
+    left: -2rem;
+    right: -2rem;
+  }
+  margin-top: 3rem;
+  border-radius: 2rem 2rem 0 0;
+  padding: {
+    top: 3rem;
+    right: 3rem;
+    bottom: 3rem;
+    left: 3rem;
+  }
+
+  h2 {
+    color: $white;
+  }
+}
+
+label {
+  color: $white;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  margin-top: 0.25rem;
+  transition: background-color 300ms ease-in-out;
+  color: $black;
+  appearance: none;
+
+  &:hover {
+    background-color: $footer-secondary;
+  }
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px $footer-secondary;
+  }
+
+  &[type="text"] {
+    background-color: $white;
+  }
+  &::placeholder {
+    color: $placeholder-color;
+  }
+}
+
+textarea {
+  width: 100%;
+  border-radius: 6px;
+  padding: 0.5rem;
+  border: none;
+  color: $black;
+  transition: background-color 300ms ease-in-out;
+  appearance: none;
+  &::placeholder {
+    color: $placeholder-color;
+  }
+  // &:hover {
+  //   background-color: green;
+  // }
+  &:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px $footer-secondary;
+  }
+}
+
+[type="submit"] {
+  background-color: $white;
+  margin-top: 1rem;
+  font-weight: $font-normal;
+}
