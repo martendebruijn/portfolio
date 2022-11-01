@@ -8,7 +8,7 @@ nav {
   height: 2.5rem;
   width: 2.5rem;
   border-radius: $border-rad-default;
-  display: none;
+  display: grid;
   place-items: center;
   font-size: 1.5rem;
   position: fixed;
@@ -18,15 +18,12 @@ nav {
   transition: background-color 300ms ease-in-out;
 
   &:hover {
-    background-color: green;
+    background-color: $footer-secondary;
   }
   &:focus {
     outline: 2px solid transparent;
     outline-offset: 2px;
     box-shadow: 0 0 0 3px blue;
-  }
-  &--visible {
-    display: grid;
   }
 }
 

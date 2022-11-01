@@ -12,30 +12,28 @@
     <div class="modal">
       <nav>
         <ul>
-          <li><a href="#">Werk</a></li>
-          <li><a href="#">Opleiding</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#werk">Werk</a></li>
+          <li><a href="#opleiding">Opleiding</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
     <div class="app">
       <nav>
-        <button
-          type="button"
-          class="nav-btn nav-btn--bars nav-btn--visible"
-          title="Open navigatie menu"
-        >
+        <button type="button" class="nav-btn" title="Open navigatie menu">
           <span class="fa-solid fa-bars" aria-hidden="true"></span>
-          <span class="sr-only">Open navigatie menu</span>
+          <span class="sr-only"
+            ><span class="nav-btn-icon-sr-only">Open</span> navigatie menu</span
+          >
         </button>
-        <button
+        <!-- <button
           type="button"
           class="nav-btn nav-btn--times"
           title="Sluit navigatie menu"
         >
           <span class="fa-solid fa-times" aria-hidden="true"></span>
           <span class="sr-only">Sluit navigatie menu</span>
-        </button>
+        </button> -->
       </nav>
       <header>
         <img
@@ -202,8 +200,8 @@
           </div>
         </section>
 
-        <section aria-labelledby="a">
-          <h2 id="a">Werk</h2>
+        <section aria-labelledby="werk">
+          <h2 id="werk">Werk</h2>
 
           <div class="card-grid">
             <div class="card card--mozard">
@@ -271,8 +269,8 @@
             </div>
           </div>
         </section>
-        <section aria-labelledby="b">
-          <h2 id="b">Opleiding</h2>
+        <section aria-labelledby="opleiding">
+          <h2 id="opleiding">Opleiding</h2>
           <div>
             <h3 class="foo">Communicatie en Multimedia Design</h3>
             <div class="card-grid">
@@ -345,27 +343,27 @@
         </section>
       </main>
     </div>
-    <footer>
+    <footer aria-labelledby="contact">
       <form action="#">
-        <h2>Contact</h2>
-        <label for="#">
+        <h2 id="contact">Contact</h2>
+        <label for="naam">
           Naam
-          <input type="text" id="#" name="#" placeholder="Gerrit Kempe" />
+          <input type="text" id="naam" name="naam" placeholder="Gerrit Kempe" />
         </label>
-        <label for="#">
+        <label for="email">
           E-mail
           <input
             type="text"
-            id="#"
-            name="#"
+            id="email"
+            name="email"
             placeholder="g.kempe@voorbeeld.nl"
           />
         </label>
-        <label for="#">
+        <label for="message">
           Bericht
           <textarea
-            name="#"
-            id="#"
+            name="message"
+            id="message"
             placeholder="Super tof werk! Ik zou graag een keer kennis willen maken!"
           ></textarea>
         </label>
@@ -375,9 +373,9 @@
         <h2>Site overzicht</h2>
         <ul>
           <li>
-            <a href="#">Top</a>
-            <a href="#">Werk</a>
-            <a href="#">Opleiding</a>
+            <a href="#top">Top</a>
+            <a href="#werk">Werk</a>
+            <a href="#opleiding">Opleiding</a>
           </li>
         </ul>
       </div>

@@ -1,20 +1,30 @@
 console.log("Huur mij in: marten@debruijn.io");
 
-const modal = document.querySelector(".modal");
-const navBtnBars = document.querySelector(".nav-btn--bars");
-const navBtnTimes = document.querySelector(".nav-btn--times");
-navBtnBars?.addEventListener("click", (e) => {
-  modal?.classList.add("open");
-  document.body.classList.add("no-scroll");
-  navBtnTimes?.classList.add("nav-btn--visible");
-  navBtnBars?.classList.remove("nav-btn--visible");
-});
-navBtnTimes?.addEventListener("click", (e) => {
-  modal?.classList.remove("open");
-  document.body.classList.remove("no-scroll");
-  navBtnBars?.classList.add("nav-btn--visible");
-  navBtnTimes?.classList.remove("nav-btn--visible");
-});
+const modalEventListener = () => {
+  const modal = document.querySelector(".modal");
+  const btn = document.querySelector(".nav-btn");
+  const btnIcon = btn?.querySelector(".fa-solid");
+  const btnSrOnly = btn?.querySelector(".nav-btn-icon-sr-only") as HTMLElement;
+
+  btn?.addEventListener("click", (e) => {
+    const hasOpen = modal?.classList.contains("open");
+    if (hasOpen) {
+      modal?.classList.remove("open");
+      if (btnIcon?.classList.contains("fa-times"))
+        btnIcon.classList.remove("fa-times");
+      btnIcon?.classList.add("fa-bars");
+      btnSrOnly.innerText = "Open";
+    } else {
+      modal?.classList.add("open");
+      if (btnIcon?.classList.contains("fa-bars"))
+        btnIcon.classList.remove("fa-bars");
+      btnIcon?.classList.add("fa-times");
+      btnSrOnly.innerText = "Sluit";
+    }
+  });
+};
+
+modalEventListener();
 
 const discoBtn = document.getElementById("disco-btn");
 discoBtn?.addEventListener("click", (e) => {
