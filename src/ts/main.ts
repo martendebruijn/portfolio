@@ -5,22 +5,37 @@ const modalEventListener = () => {
   const btn = document.querySelector(".nav-btn");
   const btnIcon = btn?.querySelector(".fa-solid");
   const btnSrOnly = btn?.querySelector(".nav-btn-icon-sr-only") as HTMLElement;
+  const anchors = modal?.querySelectorAll("a");
+
+  const closeModal = () => {
+    modal?.classList.remove("open");
+    if (btnIcon?.classList.contains("fa-times"))
+      btnIcon.classList.remove("fa-times");
+    btnIcon?.classList.add("fa-bars");
+    btnSrOnly.innerText = "Open";
+  };
+
+  const openModal = () => {
+    modal?.classList.add("open");
+    if (btnIcon?.classList.contains("fa-bars"))
+      btnIcon.classList.remove("fa-bars");
+    btnIcon?.classList.add("fa-times");
+    btnSrOnly.innerText = "Sluit";
+  };
 
   btn?.addEventListener("click", (e) => {
     const hasOpen = modal?.classList.contains("open");
     if (hasOpen) {
-      modal?.classList.remove("open");
-      if (btnIcon?.classList.contains("fa-times"))
-        btnIcon.classList.remove("fa-times");
-      btnIcon?.classList.add("fa-bars");
-      btnSrOnly.innerText = "Open";
+      closeModal();
     } else {
-      modal?.classList.add("open");
-      if (btnIcon?.classList.contains("fa-bars"))
-        btnIcon.classList.remove("fa-bars");
-      btnIcon?.classList.add("fa-times");
-      btnSrOnly.innerText = "Sluit";
+      openModal();
     }
+  });
+
+  anchors?.forEach((a) => {
+    a.addEventListener("click", (e) => {
+      closeModal();
+    });
   });
 };
 
