@@ -39,48 +39,52 @@ const modalEventListener = () => {
   });
 };
 
-modalEventListener();
-
-const discoBtn = document.getElementById("disco-btn");
-discoBtn?.addEventListener("click", (e) => {
-  const colors = [
-    "red",
-    "blue",
-    "green",
-    "yellow",
-    "orange",
-    "brown",
-    "gold",
-    "coral",
-    "lime",
-  ];
-  const speed = 200;
-  const speedRotate = 5;
-  for (let i = 0; i < 361; i++) {
-    setTimeout(function () {
-      const a = document.querySelectorAll(".card");
-      for (let x = 0; x < a.length; x++) {
-        const f = a[x] as HTMLElement;
-        f.style.transform = `rotate(${i}deg)`;
-      }
-      const z = document.querySelector("footer");
-      if (!z) throw new Error("foo");
-      z.style.transform = `rotate(${i}deg)`;
-    }, speedRotate * i);
-  }
-  for (let i = 0; i < colors.length; i++) {
-    setTimeout(function () {
-      makeColor(colors[i]);
-    }, speed * i);
-
-    if (i === colors.length - 1) {
+const discoEventListener = () => {
+  const discoBtn = document.getElementById("disco-btn");
+  discoBtn?.addEventListener("click", (e) => {
+    const colors = [
+      "red",
+      "blue",
+      "green",
+      "yellow",
+      "orange",
+      "brown",
+      "gold",
+      "coral",
+      "lime",
+    ];
+    const speed = 200;
+    const speedRotate = 5;
+    for (let i = 0; i < 361; i++) {
       setTimeout(function () {
-        makeColor(null);
-      }, speed * i + speed);
+        const a = document.querySelectorAll(".card");
+        for (let x = 0; x < a.length; x++) {
+          const f = a[x] as HTMLElement;
+          f.style.transform = `rotate(${i}deg)`;
+        }
+        const z = document.querySelector("footer");
+        if (!z) throw new Error("foo");
+        z.style.transform = `rotate(${i}deg)`;
+      }, speedRotate * i);
     }
-  }
-});
+    for (let i = 0; i < colors.length; i++) {
+      setTimeout(function () {
+        makeColor(colors[i]);
+      }, speed * i);
 
-function makeColor(color) {
-  document.body.style.backgroundColor = color;
-}
+      if (i === colors.length - 1) {
+        setTimeout(function () {
+          makeColor(null);
+        }, speed * i + speed);
+      }
+    }
+  });
+
+  const makeColor = (color: string | null) => {
+    if (color === null) color = "";
+    document.body.style.backgroundColor = color;
+  };
+};
+
+modalEventListener();
+discoEventListener();
