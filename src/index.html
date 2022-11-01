@@ -26,14 +26,6 @@
             ><span class="nav-btn-icon-sr-only">Open</span> navigatie menu</span
           >
         </button>
-        <!-- <button
-          type="button"
-          class="nav-btn nav-btn--times"
-          title="Sluit navigatie menu"
-        >
-          <span class="fa-solid fa-times" aria-hidden="true"></span>
-          <span class="sr-only">Sluit navigatie menu</span>
-        </button> -->
       </nav>
       <header>
         <img
@@ -343,34 +335,41 @@
         </section>
       </main>
     </div>
-    <footer aria-labelledby="contact">
-      <form action="#">
-        <h2 id="contact">Contact</h2>
-        <label for="naam">
-          Naam
-          <input type="text" id="naam" name="naam" placeholder="Gerrit Kempe" />
-        </label>
-        <label for="email">
-          E-mail
-          <input
-            type="text"
-            id="email"
-            name="email"
-            placeholder="g.kempe@voorbeeld.nl"
-          />
-        </label>
-        <label for="message">
-          Bericht
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Super tof werk! Ik zou graag een keer kennis willen maken!"
-          ></textarea>
-        </label>
-        <input type="submit" value="Verzenden" />
-      </form>
-      <div>
-        <h2>Site overzicht</h2>
+    <footer>
+      <section aria-labelledby="contact">
+        <form action="#">
+          <h2 id="contact">Contact</h2>
+          <label for="naam">
+            <span>Naam</span>
+            <input
+              type="text"
+              id="naam"
+              name="naam"
+              placeholder="Gerrit Kempe"
+            />
+          </label>
+          <label for="email">
+            <span>E-mail</span>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="g.kempe@voorbeeld.nl"
+            />
+          </label>
+          <label for="message">
+            <span>Bericht</span>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Super tof werk! Ik zou graag een keer kennis willen maken!"
+            ></textarea>
+          </label>
+          <input type="submit" value="Verzenden" />
+        </form>
+      </section>
+      <section aria-labelledby="site-overzicht">
+        <h2 id="site-overzicht">Site overzicht</h2>
         <ul>
           <li>
             <a href="#top">Top</a>
@@ -378,9 +377,9 @@
             <a href="#opleiding">Opleiding</a>
           </li>
         </ul>
-      </div>
-      <div>
-        <h2>Media</h2>
+      </section>
+      <section aria-labelledby="socials">
+        <h2 id="socials">Media</h2>
         <ul>
           <li>
             <a href="#">
@@ -405,7 +404,7 @@
             </a>
           </li>
         </ul>
-      </div>
+      </section>
       <button type="button" id="disco-btn">
         <span>🪩</span>
         Disco

@@ -95,10 +95,12 @@
         padding-right: 1rem;
         h3 {
           line-height: 1;
+          margin-bottom: 0.25rem;
         }
         &__subtitle {
           text-transform: uppercase;
           color: $white;
+          line-height: 1rem;
           font: {
             weight: $font-bold;
             size: 0.75rem;

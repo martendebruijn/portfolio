@@ -27,7 +27,6 @@ footer {
     left: -2rem;
     right: -2rem;
   }
-  margin-top: 3rem;
   border-radius: 2rem 2rem 0 0;
   padding: 3rem;
 
@@ -38,6 +37,13 @@ footer {
 
 label {
   color: $white;
+  > span {
+    font: {
+      weight: $font-semibold;
+      size: 0.75rem;
+    }
+    text-transform: uppercase;
+  }
 }
 
 input {
@@ -46,7 +52,6 @@ input {
   padding: 0.5rem;
   border-radius: 6px;
   margin-bottom: 1rem;
-  margin-top: 0.25rem;
   transition: background-color 300ms ease-in-out;
   color: $black;
   appearance: none;

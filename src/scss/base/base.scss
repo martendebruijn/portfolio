@@ -82,3 +82,15 @@ input {
 textarea {
   resize: none;
 }
+
+section {
+  margin-bottom: $section-spacing;
+}
+
+main {
+  margin-top: $section-spacing;
+}
+
+#disco-btn {
+  color: $white;
+}
