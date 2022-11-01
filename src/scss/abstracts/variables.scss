@@ -1,8 +1,10 @@
+// --- Colors ----
 $black: hsl(0, 0%, 0%);
 $white: hsl(0, 0%, 100%);
 $primary-color: hsl(148, 17%, 27%);
 $primary-transparent: hsla(148, 17%, 27%, 0.6);
 
+// Card colors
 $mozard-color: hsl(148, 17%, 27%);
 $eonics-color: hsl(280, 17%, 27%);
 $afstuderen-color: hsl(240, 17%, 27%);
@@ -20,7 +22,12 @@ $btn-secondary-text: hsl(148, 17%, 27%);
 
 $header-text: $black;
 
+// ---------------
+
+// Border radius
 $border-rad-default: 6px;
+
+// --- Fonts ---
 
 // Font Weight
 $font-thin: 100;
@@ -33,21 +40,20 @@ $font-bold: 700;
 $font-extrabold: 800;
 $font-black: 900;
 
+// Font size
 $font-size-default: 16px;
+$font-size-lead: 1.3rem;
 
+// Font family
 $font-title: "Pompiere", cursive;
 
-$height-screen: 100vh;
-$height-full: 100%;
+$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
-$width-screen: 100vw;
-$width-full: 100%;
-
-// Breakpoints
+// --- Breakpoints ----
 $sm: 640px;
 $md: 768px;
 $lg: 1024px;
 $xl: 1280px;
 $xxl: 1536px;
 
-$fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
+// ---------------

@@ -1,9 +1,19 @@
 console.log("Huur mij in: marten@debruijn.io");
 
-const btn = document.querySelector(".nav-btn");
 const modal = document.querySelector(".modal");
-btn?.addEventListener("click", (e) => {
+const navBtnBars = document.querySelector(".nav-btn--bars");
+const navBtnTimes = document.querySelector(".nav-btn--times");
+navBtnBars?.addEventListener("click", (e) => {
   modal?.classList.add("open");
+  document.body.classList.add("no-scroll");
+  navBtnTimes?.classList.add("nav-btn--visible");
+  navBtnBars?.classList.remove("nav-btn--visible");
+});
+navBtnTimes?.addEventListener("click", (e) => {
+  modal?.classList.remove("open");
+  document.body.classList.remove("no-scroll");
+  navBtnBars?.classList.add("nav-btn--visible");
+  navBtnTimes?.classList.remove("nav-btn--visible");
 });
 
 const discoBtn = document.getElementById("disco-btn");

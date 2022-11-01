@@ -42,8 +42,8 @@ button {
 
 img,
 svg {
-  max-width: $width-full;
-  max-height: $height-full;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 h1,
@@ -64,7 +64,7 @@ h1 {
 }
 
 .app {
-  min-height: $height-screen;
+  min-height: 100vh;
 }
 
 ul,
