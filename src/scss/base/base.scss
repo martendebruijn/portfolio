@@ -18,6 +18,7 @@ body {
 body {
   margin: auto;
   max-width: 375px;
+  max-width: $sm;
   padding: {
     top: 1rem;
     right: 2rem;
@@ -83,12 +84,9 @@ textarea {
   resize: none;
 }
 
-section {
+section,
+.hor-scroll-container {
   margin-bottom: $section-spacing;
-}
-
-main {
-  margin-top: $section-spacing;
 }
 
 #disco-btn {

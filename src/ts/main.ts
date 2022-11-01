@@ -60,7 +60,8 @@ discoBtn?.addEventListener("click", (e) => {
     setTimeout(function () {
       const a = document.querySelectorAll(".card");
       for (let x = 0; x < a.length; x++) {
-        a[x].style.transform = `rotate(${i}deg)`;
+        const f = a[x] as HTMLElement;
+        f.style.transform = `rotate(${i}deg)`;
       }
       const z = document.querySelector("footer");
       if (!z) throw new Error("foo");

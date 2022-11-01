@@ -14,6 +14,10 @@ h1 {
 header {
   // nav btn height + 1rem padding
   padding-top: calc(40px + 1rem);
+  @media (min-width: $sm) {
+    display: flex;
+    gap: 1.5rem;
+  }
 }
 
 .header__subtitle {
@@ -32,6 +36,21 @@ header {
   }
   width: calc(100% + 4rem);
   max-width: unset;
+
+  @media (min-width: $sm) {
+    border-radius: 2rem;
+    margin: {
+      right: 0;
+      left: 0;
+    }
+    width: 50%;
+  }
+}
+
+.header__text {
+  @media (min-width: $sm) {
+    width: 50%;
+  }
 }
 
 .intro {
