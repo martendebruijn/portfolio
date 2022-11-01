@@ -198,7 +198,7 @@
           <h2 id="werk">Werk</h2>
 
           <div class="card-grid">
-            <div class="card card--mozard">
+            <article class="card card--mozard" aria-labelledby="card-mozard">
               <div class="card__thumb">
                 <div class="card__thumb__black-overlay"></div>
                 <div class="card__thumb__img"></div>
@@ -213,7 +213,7 @@
                     />
                   </div>
                   <div class="card__main__header__text">
-                    <h3>Mozard</h3>
+                    <h3 id="card-mozard">Mozard</h3>
                     <span class="card__main__header__text__subtitle">
                       JavaScript front-end engineer
                     </span>
@@ -228,9 +228,9 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="card card--eonics">
+            <article class="card card--eonics" aria-labelledby="card-eonics">
               <div class="card__thumb">
                 <div class="card__thumb__black-overlay"></div>
                 <div class="card__thumb__img"></div>
@@ -245,7 +245,7 @@
                     />
                   </div>
                   <div class="card__main__header__text">
-                    <h3>Eonics</h3>
+                    <h3 id="card-eonics">Eonics</h3>
                     <span class="card__main__header__text__subtitle">
                       Stagiair UX-designer & front-end developer
                     </span>
@@ -260,7 +260,7 @@
                   </p>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </section>
         <section aria-labelledby="opleiding">
@@ -268,7 +268,10 @@
           <div>
             <h3 class="foo">Communicatie en Multimedia Design</h3>
             <div class="card-grid">
-              <div class="card card--afstuderen">
+              <article
+                class="card card--afstuderen"
+                aria-labelledby="card-afstuderen"
+              >
                 <div class="card__thumb">
                   <div class="card__thumb__black-overlay"></div>
                   <div class="card__thumb__img"></div>
@@ -283,7 +286,7 @@
                       />
                     </div>
                     <div class="card__main__header__text">
-                      <h4>Afstuderen</h4>
+                      <h4 id="card-afstuderen">Afstuderen</h4>
                       <span class="card__main__header__text__subtitle">
                         Avans hogeschool
                       </span>
@@ -299,8 +302,8 @@
                     </p>
                   </div>
                 </div>
-              </div>
-              <div class="card card--minor">
+              </article>
+              <article class="card card--minor" aria-labelledby="card-minor">
                 <div class="card__thumb">
                   <div class="card__thumb__black-overlay"></div>
                   <div class="card__thumb__img"></div>
@@ -315,7 +318,7 @@
                       />
                     </div>
                     <div class="card__main__header__text">
-                      <h4>Minor</h4>
+                      <h4 id="card-minor">Minor</h4>
                       <span class="card__main__header__text__subtitle">
                         Hogeschool van Amsterdam
                       </span>
@@ -331,7 +334,7 @@
                     </p>
                   </div>
                 </div>
-              </div>
+              </article>
             </div>
           </div>
         </section>
