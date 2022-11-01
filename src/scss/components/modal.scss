@@ -8,11 +8,11 @@
   }
   max-width: 375px;
   max-width: $sm;
-  border-radius: 9999px;
+  border-radius: $rounded-full;
   margin: auto;
   text-align: center;
   background-color: $black;
-  z-index: 2;
+  z-index: $z-modal;
   justify-content: center;
   align-items: center;
 

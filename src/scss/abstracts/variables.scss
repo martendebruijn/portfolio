@@ -25,7 +25,8 @@ $header-text: $black;
 // ---------------
 
 // Border radius
-$border-rad-default: 6px;
+$rounded: 6px;
+$rounded-full: 9999px;
 
 // --- Fonts ---
 
@@ -49,7 +50,7 @@ $font-title: "Pompiere", cursive;
 
 $fa-font-path: "../../node_modules/@fortawesome/fontawesome-free/webfonts";
 
-// --- Breakpoints ----
+// --- Breakpoints ---
 $sm: 640px;
 $md: 768px;
 $lg: 1024px;
@@ -59,3 +60,9 @@ $xxl: 1536px;
 // ---------------
 
 $section-spacing: 3rem;
+
+// --- Z-index ---
+$z-nav-btn: 1;
+$z-modal: 2;
+
+// ---------------

@@ -8,7 +8,7 @@ nav {
   color: $white;
   height: 2.5rem;
   width: 2.5rem;
-  border-radius: $border-rad-default;
+  border-radius: $rounded-default;
   display: grid;
   place-items: center;
   font-size: 1.5rem;
@@ -16,7 +16,7 @@ nav {
   // 375px - (width btn + margin left body + margin right body)
   margin-left: calc(375px - 6.5rem);
   margin-left: calc($sm - 6.5rem);
-  z-index: 1;
+  z-index: $z-nav-btn;
   transition: background-color 300ms ease-in-out;
 
   &:hover {
